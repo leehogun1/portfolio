@@ -73,6 +73,13 @@ const TroubleBox = styled.div`
   .highlight { color: #007bff; font-weight: 700; } /* 해결 방법 강조색 */
 `;
 
+const TeachBox = styled.div`
+  display: flex;
+  wdith: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+`;
+
 const ProjectDetail = () => {
   const { pathname } = useLocation();
 
@@ -111,11 +118,11 @@ const ProjectDetail = () => {
         <div style={{ marginBottom: '20px' }}>
           <strong>담당 역할:</strong> 프론트엔드 개발 (UI 구현, 비동기 API 연동, 성능 최적화)
         </div>
-        <div>
+        <TeachBox>
           {['HTML', 'CSS', 'JavaScript', 'Thymeleaf', 'Axios'].map(tech => (
             <TechTag key={tech}>{tech}</TechTag>
           ))}
-        </div>
+        </TeachBox>
       </Section>
 
       {/* 4. 핵심 트러블 슈팅 (가장 중요) */}
