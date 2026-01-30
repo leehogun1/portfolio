@@ -46,9 +46,22 @@
 
 .project-left-contents {
     display: flex;
+    justify-content: center;
+}
+
+.goDetail {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 28px;
+    text-decoration: none;
+}
+
+.goDetail:hover {
+    text-decoration-line: underline;
+    text-decoration-color: var(--primary-white);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
 }
 
 @media screen and (max-width:1024px) {
