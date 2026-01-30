@@ -1,16 +1,28 @@
-# React + Vite
+# Frontend Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React로 제작한 개인 포트폴리오 웹사이트입니다.  
+프로젝트 소개, 상세 페이지, 반응형 UI, 부드러운 스크롤 UX를 중심으로 구현했습니다.
 
-Currently, two official plugins are available:
+**Live Demo:** https://YOUR-VERCEL-URL.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 주요 기능
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- 싱글 페이지 포트폴리오 구성
+- 프로젝트 목록 & 상세 페이지
+- 스크롤 위치에 따라 나타나는 Top 버튼
+- 라우터 이동 시 스크롤 제어
+- 반응형 디자인 (Desktop / Tablet / Mobile)
+- Vite 기반 빠른 빌드 환경
+- Vercel 배포
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 기술 스택
+
+- **Frontend:** React, React Router
+- **Build Tool:** Vite
+- **Styling:** CSS / CSS Variables
+- **Deployment:** Vercel
+- **Version Control:** Git & GitHub
