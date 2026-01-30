@@ -14,10 +14,13 @@ function aboutUs({ refProp }) {
                         <span className='display-text extra-bold'>me</span>
                     </div>
                     <div className='aboutUs-texts'>
-                        <span className='p2'>사용자 경험을 중심으로 화면을 구현하는 프론트엔드 개발자입니다.
-                            JavaScript 기반 웹 UI 구현과 사용 흐름 개선에 관심이 많습니다.</span>
-                        <span className='p2'>프론트엔드 개발에서는 특히 렌더링 속도와 사용 편의성에 신경 써왔습니다.
-                            불필요한 렌더링을 줄이고, 사용자가 페이지를 이용하면서 불편함을 느끼지 않도록 UI 구조와 동작 흐름을 지속적으로 개선하려 노력했습니다.</span>
+                        <span className='p2'>저는 항상 개발을 하면서 가장 중요하게 생각하는 것은 사용자가 어떻게 서비스를 편하게 받아들일까 생각하였습니다.</span>
+                        <span className='p2'>검색을 하고 다시 돌아왔을 때 검색어가 유지가 되거나 돌아가기를 눌러도 돌아오도록 하고
+                            렌더링을 빠르게 하여 사용자가 불편함을 겪게 하지 않도록 하는 방향으로 생각해왔습니다.
+                        </span>
+                        <span className='p2'>
+                            앞으로도 많은 기술들을 배워 좀 더 나은 서비스를 제공하는 개발자가 되고 싶습니다.
+                        </span>
                     </div>
                 </div>
             </div>
