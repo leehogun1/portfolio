@@ -1,0 +1,100 @@
+header {
+    padding: 24px 80px;
+}
+
+.header-inner {
+    padding: 0 32px;
+}
+
+.Taskbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-items {
+    color: var(--primary-black);
+    text-decoration: none;
+}
+
+.nav-items:hover {
+    color: var(--primary-neutral);
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        padding: 16px 16px;
+    }
+
+    .header-inner {
+        padding: 0;
+    }
+
+    .Taskbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu-btn {
+        display: block;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        background-color: var(--primary-white);
+        border: none;
+    }
+
+    .menu-btn:hover {
+        cursor: pointer;
+    }
+
+    .menu-btn:hover .menu-img rect {
+        fill: var(--zinc-300);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu li {
+        padding: 10px 0;
+    }
+
+    .menu li:hover {
+        background-color: var(--zinc-300);
+    }
+
+    .menu.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        gap: 0;
+    }
+}

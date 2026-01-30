@@ -1,0 +1,81 @@
+.skillBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    border: 2px solid var(--primary-black);
+    border-radius: 4px;
+    gap: 32px;
+    width: 134px;
+    height: 134px;
+    transition: all 0.2s ease;
+}
+
+.skillBox h5 {
+    transition: all 0.2s ease;
+}
+
+.icons path {
+    transition: all 0.2s ease;
+}
+
+/* 호버 시 색상 변경 */
+.skillBox:hover {
+    background-color: var(--primary-black);
+}
+
+.skillBox:hover h5 {
+    color: var(--primary-white);
+}
+
+/* nth-of-type() 같은 태그가 여러개 있을 시 괄호 안에 숫자대로 접근 가능 */
+.skillBox:hover .icons path:nth-of-type(1) {
+    fill: var(--primary-white);
+}
+
+.skillBox:hover .icons path:nth-of-type(2) {
+    fill: var(--primary-black);
+}
+
+/* 리액트 svg 전용 */
+.skillBox:hover .react-svg g path:nth-of-type(1) {
+    fill: var(--primary-white);
+}
+
+.skillBox:hover .react-svg g path:nth-of-type(2) {
+    stroke: var(--primary-white);
+}
+
+.skillBox:hover .react-svg g path:nth-of-type(3) {
+    stroke: var(--primary-white);
+}
+
+.skillBox:hover .react-svg g path:nth-of-type(4) {
+    stroke: var(--primary-white);
+}
+
+/* 노드 전용 */
+.skillBox:hover .node-svg path:nth-of-type(1) {
+    fill: var(--primary-white);
+}
+
+.skillBox:hover .node-svg path:nth-of-type(2) {
+    fill: var(--primary-white);
+}
+
+/* 자바 전용 */
+.skillBox:hover .java-svg path:nth-of-type(1) {
+    fill: var(--primary-white);
+}
+
+.skillBox:hover .java-svg path:nth-of-type(2) {
+    fill: var(--primary-white);
+}
+
+@media screen and (max-width:1024px) {
+    .skillBox {
+        width: 106px;
+        height: 106px;
+    }
+}

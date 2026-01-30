@@ -1,0 +1,44 @@
+.skill-sec {
+    padding: 60px 80px;
+}
+
+.skill-inner {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.skill-boxs {
+    padding: 20px 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px 0;
+    gap: 20px;
+    justify-items: center
+}
+
+@media screen and (max-width:1024px) {
+    .skill-sec {
+        padding: 40px 16px;
+    }
+
+    .skill-inner {
+        padding: 0;
+    }
+
+    .row {
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

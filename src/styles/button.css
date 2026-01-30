@@ -1,0 +1,11 @@
+.btn {
+  width: 153px;
+  height: 56px;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  border-radius: 4px;
+  border: var(--primary-black) solid 1px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

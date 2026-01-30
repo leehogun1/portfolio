@@ -1,0 +1,116 @@
+/* 기본 색상 설정 */
+:root {
+  --primary-black: #000000;
+  --primary-neutral: #404040;
+  --primary-white: #FFFFFF;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-500: #71717a;
+  --zinc-800: #27272a;
+  --error-500: #ef4444;
+}
+
+#root {
+  max-width: 1440px;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sora', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -2%;
+}
+
+/* 볼드 설정 */
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+/* 기본 텍스트 크기 설정 */
+.display-text {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.outlined {
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--primary-white);
+  text-shadow: -3px 0px var(--primary-black), 0px 3px var(--primary-black), 3px 0px var(--primary-black), 0px -3px var(--primary-black);
+}
+
+@media screen and (max-width:1024px) {
+  .display-text {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .outlined {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.p1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.p2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--zinc-500);
+}
+
+.p3 {
+  font-size: 12px;
+  line-height: 16px;
+}

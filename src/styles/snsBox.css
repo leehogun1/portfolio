@@ -1,0 +1,32 @@
+.snsBox {
+    padding: 16px;
+    border: 2px solid var(--primary-black);
+    border-radius: 4px;
+}
+
+.snsBox svg {
+    display: block;
+}
+
+.snsBox:hover {
+    background-color: var(--primary-black);
+    cursor: pointer;
+}
+
+.snsBox:hover svg {
+    fill: var(--primary-white);
+}
+
+.snsBox:hover .icons path:nth-of-type(1) {
+    fill: var(--primary-white);
+}
+
+.snsBox:hover .icons path:nth-of-type(2) {
+    fill: var(--primary-white);
+}
+
+@media screen and (max-width:1024px) {
+    .snsBox {
+        padding: 12px;
+    }
+}
