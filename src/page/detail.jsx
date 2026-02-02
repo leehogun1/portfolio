@@ -116,7 +116,12 @@ const ProjectDetail = () => {
       <Section>
         <h2>My Role & Skills</h2>
         <div style={{ marginBottom: '20px' }}>
-          <strong>담당 역할:</strong> 프론트엔드 개발 (UI 구현, 비동기 API 연동, 성능 최적화)
+          <strong>담당 역할:</strong> 프론트엔드 개발
+          <ul>
+            <li>문화유산 목록/상세 페이지 UI 구현</li>
+            <li>공공데이터 API 연동 및 화면 출력</li>
+            <li>전반적인 레이아웃 구성 담당</li>
+          </ul>
         </div>
         <TeachBox>
           {['HTML', 'CSS', 'JavaScript', 'Thymeleaf', 'Axios'].map(tech => (
@@ -127,14 +132,12 @@ const ProjectDetail = () => {
 
       {/* 4. 핵심 트러블 슈팅 (가장 중요) */}
       <Section>
-        <h2>Troubleshooting</h2>
+        <h2>고민/개선</h2>
         <TroubleBox>
           <div className="step">
-            <span className="label">문제상황</span>
             <p>외부 API에서 XML 파싱을 통해 이미지를 가져오는 과정에서 로딩 속도가 현저히 느려 사용자 경험이 저해됨.</p>
           </div>
           <div className="step">
-            <span className="label">분석</span>
             <p>데이터 호출 과정보다 외부 이미지 서버와 연결을 맺는 <strong>Handshake 지연 시간</strong>이 병목 구간임을 확인.</p>
           </div>
           <div className="step">
